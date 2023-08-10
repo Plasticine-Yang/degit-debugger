@@ -1,8 +1,3 @@
-const { readdirSync } = require('fs')
-const { resolve } = require('path')
-
-const packages = readdirSync(resolve(__dirname, 'packages'))
-
 /**
  * @type { import('cz-git').UserConfig }
  */
@@ -12,6 +7,6 @@ module.exports = {
     'subject-case': [2, 'never', ['upper-case']],
   },
   prompt: {
-    scopes: [...packages],
+    scopes: ['bin', 'index', 'utils'],
   },
 }
