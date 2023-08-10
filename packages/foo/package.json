@@ -1,0 +1,24 @@
+{
+  "name": "foo",
+  "version": "0.0.0",
+  "author": "Plasticine-Yang",
+  "description": "foo of @node-monorepo",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup --dts",
+    "lint": "eslint src --fix"
+  }
+}

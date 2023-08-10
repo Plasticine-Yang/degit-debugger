@@ -1,0 +1,6 @@
+.eslintrc.cjs
+.commitlintrc.cjs
+.lintstagedrc.cjs
+
+node_modules
+dist
